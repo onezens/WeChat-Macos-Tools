@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		352210912302A79300FA8BFC /* WeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 352210902302A79300FA8BFC /* WeChat.h */; };
-		352210932302A79300FA8BFC /* WeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 352210922302A79300FA8BFC /* WeChat.m */; };
 		352210B52302ACE300FA8BFC /* main.xmi in Sources */ = {isa = PBXBuildFile; fileRef = 352210A52302A90600FA8BFC /* main.xmi */; };
 		352210B82302B06400FA8BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352210B72302B06400FA8BFC /* main.m */; };
 		352210BE2302B22400FA8BFC /* libsubstitute.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 352210BC2302B22400FA8BFC /* libsubstitute.dylib */; };
 		352210BF2302B22400FA8BFC /* substrate.h in Headers */ = {isa = PBXBuildFile; fileRef = 352210BD2302B22400FA8BFC /* substrate.h */; };
+		352673EE2305068E00C24923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352673ED2305068E00C24923 /* main.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		352673E92305068D00C24923 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3522108D2302A79300FA8BFC /* libWeChat.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWeChat.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		352210902302A79300FA8BFC /* WeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChat.h; sourceTree = "<group>"; };
-		352210922302A79300FA8BFC /* WeChat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChat.m; sourceTree = "<group>"; };
 		352210992302A80300FA8BFC /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = SOURCE_ROOT; };
 		3522109B2302A80E00FA8BFC /* xctheos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xctheos.h; sourceTree = "<group>"; };
 		3522109D2302A82500FA8BFC /* logs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = logs; sourceTree = SOURCE_ROOT; };
@@ -30,6 +39,9 @@
 		352210BC2302B22400FA8BFC /* libsubstitute.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsubstitute.dylib; sourceTree = "<group>"; };
 		352210BD2302B22400FA8BFC /* substrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substrate.h; sourceTree = "<group>"; };
 		352210C02302B26700FA8BFC /* wechat-headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "wechat-headers"; sourceTree = SOURCE_ROOT; };
+		352673EB2305068D00C24923 /* testdemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testdemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		352673ED2305068E00C24923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		352673F2230548E000C24923 /* wechat-headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wechat-headers.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		352673E82305068D00C24923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +75,7 @@
 			children = (
 				3522108F2302A79300FA8BFC /* WeChat */,
 				352210AD2302ACB500FA8BFC /* wechat-logos */,
+				352673EC2305068E00C24923 /* testdemo */,
 				3522108E2302A79300FA8BFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +85,7 @@
 			children = (
 				3522108D2302A79300FA8BFC /* libWeChat.dylib */,
 				352210AC2302ACB500FA8BFC /* libwechat-logos.dylib */,
+				352673EB2305068D00C24923 /* testdemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,8 +100,6 @@
 				352210992302A80300FA8BFC /* bin */,
 				352210BA2302B22400FA8BFC /* libs */,
 				3522109A2302A80E00FA8BFC /* include */,
-				352210902302A79300FA8BFC /* WeChat.h */,
-				352210922302A79300FA8BFC /* WeChat.m */,
 				352210B72302B06400FA8BFC /* main.m */,
 			);
 			path = WeChat;
@@ -90,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3522109B2302A80E00FA8BFC /* xctheos.h */,
+				352673F2230548E000C24923 /* wechat-headers.h */,
 			);
 			path = include;
 			sourceTree = SOURCE_ROOT;
@@ -119,6 +139,14 @@
 			path = substitute;
 			sourceTree = "<group>";
 		};
+		352673EC2305068E00C24923 /* testdemo */ = {
+			isa = PBXGroup;
+			children = (
+				352673ED2305068E00C24923 /* main.m */,
+			);
+			path = testdemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				352210BF2302B22400FA8BFC /* substrate.h in Headers */,
-				352210912302A79300FA8BFC /* WeChat.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +204,23 @@
 			productReference = 352210AC2302ACB500FA8BFC /* libwechat-logos.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		352673EA2305068D00C24923 /* testdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352673F12305068E00C24923 /* Build configuration list for PBXNativeTarget "testdemo" */;
+			buildPhases = (
+				352673E72305068D00C24923 /* Sources */,
+				352673E82305068D00C24923 /* Frameworks */,
+				352673E92305068D00C24923 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testdemo;
+			productName = testdemo;
+			productReference = 352673EB2305068D00C24923 /* testdemo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +234,9 @@
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					352210AB2302ACB500FA8BFC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					352673EA2305068D00C24923 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -208,6 +255,7 @@
 			targets = (
 				3522108C2302A79300FA8BFC /* WeChat */,
 				352210AB2302ACB500FA8BFC /* wechat-logos */,
+				352673EA2305068D00C24923 /* testdemo */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				352210B82302B06400FA8BFC /* main.m in Sources */,
-				352210932302A79300FA8BFC /* WeChat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				352210B52302ACE300FA8BFC /* main.xmi in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		352673E72305068D00C24923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352673EE2305068E00C24923 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +504,24 @@
 			};
 			name = Release;
 		};
+		352673EF2305068E00C24923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65RJX5V69R;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		352673F02305068E00C24923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65RJX5V69R;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,6 +548,15 @@
 			buildConfigurations = (
 				352210B32302ACB500FA8BFC /* Debug */,
 				352210B42302ACB500FA8BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		352673F12305068E00C24923 /* Build configuration list for PBXNativeTarget "testdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352673EF2305068E00C24923 /* Debug */,
+				352673F02305068E00C24923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

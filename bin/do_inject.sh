@@ -16,6 +16,8 @@ fi
 #judge whether inject lib to mach-o
 info=`otool -l $targetpath/$targetname`
 if [[ $info =~ "@executable_path/"$libname ]]; then
+    cp $libpath/$libname $targetpath
+    echo 'copy '$libpath/$libname' to '$targetpath' success'
 	echo 'target: '$targetpath/$targetname' had inject lib'
 	exit 0
 fi

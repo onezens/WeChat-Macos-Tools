@@ -1,0 +1,18 @@
+%hook MMLogger
++ (void)debugWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 { %log; %orig; }
++ (void)doNSLog:(id)arg1 { %log; %orig; }
++ (void)errorWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 { %log; %orig; }
++ (void)infoWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 { %log; %orig; }
++ (void)initialize { %log; %orig; }
++ (void)logToConsoleWithColor:(unsigned int)arg1 module:(const char *)arg2 file:(const char *)arg3 line:(int)arg4 func:(const char *)arg5 fmt:(id)arg6 arguments:(struct __va_list_tag [1])arg7 { %log; %orig; }
++ (void)logToFile:(unsigned int)arg1 module:(const char *)arg2 file:(const char *)arg3 line:(int)arg4 func:(const char *)arg5 fmt:(id)arg6 arguments:(struct __va_list_tag [1])arg7 { %log; %orig; }
++ (void)logToFile:(int)arg1 module:(const char *)arg2 file:(const char *)arg3 line:(int)arg4 func:(const char *)arg5 message:(id)arg6 { %log; %orig; }
++ (void)logWithMMLogLevel:(int)arg1 module:(const char *)arg2 file:(const char *)arg3 line:(int)arg4 func:(const char *)arg5 message:(id)arg6 { %log; %orig; }
++ (void)outputDebugWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 arguments:(struct __va_list_tag [1])arg6 { %log; %orig; }
++ (void)outputErrorWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 arguments:(struct __va_list_tag [1])arg6 { %log; %orig; }
++ (void)outputInfoWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 arguments:(struct __va_list_tag [1])arg6 { %log; %orig; }
++ (void)outputWarnWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 arguments:(struct __va_list_tag [1])arg6 { %log; %orig; }
++ (void)printLog:(unsigned int)arg1 module:(const char *)arg2 file:(const char *)arg3 line:(int)arg4 func:(const char *)arg5 log:(id)arg6 { %log; %orig; }
++ (BOOL)shouldEnableDebugLog { %log; BOOL r = %orig; HBLogDebug(@" = %d", r); return r; }
++ (void)warnWithModule:(const char *)arg1 file:(const char *)arg2 line:(int)arg3 func:(const char *)arg4 fmt:(id)arg5 { %log; %orig; }
+%end
